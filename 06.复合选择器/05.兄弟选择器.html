@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 选中div后紧紧相邻的兄弟p元素 */
+        /* div+p{
+            color: red;
+        } */
+        /* 选中div后所有的兄弟p元素 */
+        div~p{
+            color: red;
+        }
+        /* 这里使用~一样效果 */
+        li+li{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</body>
+</html>
