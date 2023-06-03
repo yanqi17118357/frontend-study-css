@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 注意顺序！！！ lvha     记忆：LV包包好 */
+        /* 选中的是没有选择过的a元素 */
+        a:link{
+            color: skyblue;
+        }
+        /* 选中的是访问过的a元素 */
+        a:visited{
+            color: gray;
+        }
+        /* 选中的是鼠标悬浮状态的a元素 */
+        a:hover{
+            color: red;
+        }
+        /* 选中的是激活状态的a元素 */
+        a:active{
+            color: green;
+        }
+        input:focus,select:focus{
+            color: orange;
+            background-color: green;
+        }
+    
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">去百度</a>
+    <a href="https://www.jd.com">去京东</a>
+    <br>
+
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text">
+    <select>
+        <option value="bejing">北京</option>
+        <option value="shanghai">上海</option>
+        <option value="henan">河南</option>
+    </select>
+</body>
+</html>
