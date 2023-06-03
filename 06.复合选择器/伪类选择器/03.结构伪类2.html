@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 选中div中的最后一个儿子p元素 看结构1*/
+        /* div>p:last-child{
+            color: red;
+        } */
+
+        /* 选中div中的第三个儿子p元素 看结构2*/
+        /* div>p:nth-child(3){
+            color: red;
+        } */
+
+        /* 2n+1==odd 奇数 */
+        /* div>p:nth-child(2n+1){
+            color: red;
+        } */
+
+        /* 2n==even 偶数 */
+        /* div>p:nth-child(even){
+            color: red;
+        } */
+
+        /* 可以写成an+b的公式 */
+        /* div>p:nth-child(-n+5){
+            color: red;
+        } */
+
+        /* 选中div中第一个儿子p元素（同类型） */
+        /* div>p:first-of-type{
+            color: red;
+        } */
+        
+        /* 选中div中最后一个儿子p元素（同类型） */
+        /* div>p:last-of-type{
+            color: chocolate;
+        } */
+
+        /* 选中div中第n个儿子p元素（同类型） */
+        div>p:nth-of-type(3){
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三：98</p>
+        <p>李四：97</p>
+        <p>王五：96</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+    </div>
+</body>
+</html>
