@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* 选中div的第一个儿子p元素 看结构1*/
+        /* div>p:first-child{
+            color: red;
+        } */
+
+        /* 选中div的第一个儿子p元素 看结构2*/
+        /* div>p:first-child{
+            color: red;
+        } */
+    
+        /* 选中div后代的p元素 p的父亲是谁无所谓 但是p必须是其父亲的第一个儿子 看结构3*/
+        /* div p:first-child{
+            color: red;
+        } */
+
+        /* 选中p元素 p的父亲是谁无所谓 但是p必须是其父亲的第一个儿子 看结构3*/
+        p:first-child{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 结构1 -->
+    <!-- <div>
+        <p>张三：98</p>
+        <p>李四：97</p>
+        <p>王五：96</p>
+    </div> -->
+
+    <!-- 结构2 -->
+    <!-- <div>
+        <span>张三：98</span>
+        <p>李四：97</p>
+        <p>王五：96</p>
+    </div> -->
+    
+    <!-- 结构3 -->
+    <p>你厉害，我给你大拇哥</p>
+    <div>
+        <p>孙七：98</p>
+        <marquee>
+            <p>张三：98</p>
+            <p>赵六：98</p>
+        </marquee>
+        <p>李四：97</p>
+        <p>王五：96</p>
+    </div>
+</body>
+</html>
