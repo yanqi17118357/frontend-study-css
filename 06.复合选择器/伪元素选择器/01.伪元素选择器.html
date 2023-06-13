@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- 什么是伪元素？ 很像元素但不是元素，是元素中的一些特殊位置 -->
+	<style>
+		/* 选中div元素的第一个文字 */
+		div::first-letter{
+			color: red;
+			font-size: 40px;
+		}
+		/* 选中div元素中的第一行 */
+		div::first-line{
+			background-color: yellow;
+		}
+		/* 选中p元素最开始的位置，并创建一个子元素 */
+		p::before{
+			content: "$";
+		}
+		/* 选中p元素最后的位置，并创建一个子元素 */
+		p::after{
+			content: ".00";
+		}
+		/* 选中input元素的提示文字 */
+		input::placeholder{
+			color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, impedit placeat beatae inventore, aspernatur omnis sunt modi fuga repudiandae voluptate alias quasi doloribus porro sed nostrum qui non deserunt explicabo laborum. Facilis, ipsam earum. Soluta ducimus mollitia sed iure perferendis repudiandae, eligendi ex laudantium rerum sequi odit molestiae consectetur obcaecati exercitationem rem, tempora expedita, unde quos placeat possimus! Eveniet, placeat!</div>
+	<p>199</p>
+	<input type="text" placeholder="请输入文字">
+</body>
+</html>
