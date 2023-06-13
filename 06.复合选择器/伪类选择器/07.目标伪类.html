@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		a:link{
+			color: skyblue;
+		}
+		a:visited{
+			color: purple;
+		}
+		a:hover{
+			color: yellow;
+		}
+		a:active{
+			color: green;
+		}
+
+		div{
+			height: 100px;
+			background-color: gray;
+		}
+		/* 选中锚点指向的元素 */
+		div:target{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<a href="#one">1</a>
+	<a href="#two">2</a>
+	<a href="#three">3</a>
+	<a href="#four">4</a>
+	<a href="#five">5</a>
+	<div id="one">1</div><br/>
+	<div id="two">2</div><br/>
+	<div id="three">3</div><br/>
+	<div id="four">4</div><br/>
+	<div id="five">5</div><br/>
+
+</body>
+</html>
