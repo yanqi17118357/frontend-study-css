@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		:root{
+			color: gray;
+		}
+
+		/* 选中的是勾选的复选框、单选框 */
+		input:checked{
+			height: 100px;
+			width: 100px;
+		}
+
+		/* 选中被禁用的input框 */
+		input:disabled{
+			background-color: yellow;
+		}
+
+		/* 选中没有被禁用的input框 */
+		input:enabled{
+			background-color: green;
+		}
+		
+	</style>
+
+</head>
+<body>
+	<input type="checkbox">
+	<input type="radio" name="gender">
+	<input type="radio" name="gender">
+	<input type="text">
+	<input type="text" disabled>
+</body>
+</html>
