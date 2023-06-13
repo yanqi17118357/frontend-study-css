@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		/* 选中lang为zh-CN的div元素 */
+		div:lang(zh-CN){
+			color: red;
+		}
+
+		/* 选中lang为en的所有元素 */
+		:lang(en){
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div>abc</div>
+	<div lang="zh-CN">哈哈哈</div>
+	<span>eee</span>
+	<p>fff</p>
+</body>
+</html>
