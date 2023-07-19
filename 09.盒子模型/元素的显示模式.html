@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      background-color: skyblue;
+      height: 50px;
+    }
+    span {
+      background-color: gray;
+    }
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <!-- block 可以通过css设置宽高 -->
+  <!-- 独占一行 -->
+  <!-- 默认高度：由内容撑开 -->
+  <!-- 默认宽度：撑满父元素 -->
+  <div>Lorem ipsum dolor sit amet consecte</div>
+  <div>Lorem ipsum dolor sit amet consecte</div>
+  <div>Lorem ipsum dolor sit amet consecte</div>
+  <hr>
+  <!-- inline 无法通过css设置宽高 -->
+  <!-- 不独占一行 -->
+  <!-- 默认高度：由内容撑开 -->
+  <!-- 默认宽度：由内容撑开 -->
+  <span>Lorem ipsum dolor sit amet.</span>
+  <span>Lorem ipsum dolor sit amet.</span>
+  <span>Lorem ipsum dolor sit amet.</span>
+  <hr>
+  <!-- inline-block 可以通过css设置宽高 -->
+  <!-- 不独占一行 -->
+  <!-- 默认高度：由内容撑开 -->
+  <!-- 默认宽度：由内容撑开 -->
+  <img src="../me.jpg" alt="me">
+  <img src="../me.jpg" alt="me">
+  <img src="../me.jpg" alt="me">
+</body>
+</html>
