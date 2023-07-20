@@ -6,13 +6,23 @@
   <title>Document</title>
   <style>
     .d1 {
-      /* 20px/1.5字体大小和行高 */
-      font: 20px/1.5 "微软雅黑";
       width: 400px;
       height: 200px;
-      background-color: gray;
-      overflow: auto;
       color: red;
+      background-color: gray;
+      /* 溢出隐藏 */
+      /* overflow: hidden; */
+
+      /* 不管有没有溢出都会出现滚动条 */
+      overflow: scroll;
+
+      /* 溢出会出现滚动条，不溢出则没有 */
+      /* overflow: auto; */
+
+      /* 两个实验属性：
+      overflow-x: hidden;
+      overflow-y: hidden;
+      */
     }
     .d2 {
       width: 1000px;
