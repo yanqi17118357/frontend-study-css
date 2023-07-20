@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 能够继承的都是不影响布局的 */
+    /* 能继承字体属性、文本属性（除了vertical-align）、文字颜色等 */
+    #d1 {
+      height: 200px;
+      padding: 50px;
+      background-color: gray;
+      font: bold italic 20px "微软雅黑";
+    }
+    #d2 {
+      height: 100px;
+      padding: 50px;
+      background-color: orange;
+    }
+    #d3 {
+      height: 100px;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <div id="d1">
+    <div id="d2">
+      <div id="d3">你好啊</div>
+    </div>
+  </div>
+</body>
+</html>
