@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .outer {
+      width: 500px;
+      background-color: gray;
+      border: 1px solid black;
+      /* overflow: hidden; */
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: skyblue;
+      border: 1px solid black;
+      margin: 10px;
+    }
+    .box1, .box2, .box3 {
+      float: left;
+    }
+    .outer::after {
+      display: block;
+      content: '';
+      clear: both;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+  <div style="background-color: orange;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis nisi at maxime, reprehenderit suscipit rem voluptate ipsam omnis provident quae beatae labore consequatur, iure quis laboriosam quia deleniti, nam incidunt recusandae minus fugiat modi dolor. Esse tempora tenetur cupiditate suscipit, minima sapiente necessitatibus dolorem quidem iste nulla beatae accusantium, aspernatur quia ducimus possimus! Pariatur, officia? Ipsum magnam hic non laudantium molestias quidem optio! Ipsum temporibus minima, incidunt deserunt doloribus impedit, sed laborum beatae error fugiat, facilis voluptate soluta saepe! Hic natus quas mollitia totam autem dolore officia modi magni assumenda non beatae, expedita excepturi nesciunt sit vitae, doloremque reiciendis delectus.</div>
+</body>
+</html>
