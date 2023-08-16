@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .outer {
+      width: 500px;
+      background-color: skyblue;
+      border: 1px solid black;
+      padding: 10px;
+      position: relative;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+    }
+    .box1 {
+      background-color: gray;
+    }
+    .box2 {
+      background-color: orange;
+      position: absolute;
+      left: 10px;
+      /* 先不用理解 */
+      transition: all 1s linear;
+    }
+    .box3 {
+      background-color: green;
+    }
+    /* 当鼠标放在outer盒子中子代box2的变化 */
+    .outer:hover .box2 {
+      position: absolute;
+      left: 50px;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+  </div>
+</body>
+</html>
