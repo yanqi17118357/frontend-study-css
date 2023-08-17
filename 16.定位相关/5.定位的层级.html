@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .outer {
+      width: 500px;
+      background-color: skyblue;
+      padding: 20px;
+      border: 1px solid black;
+      position: relative;
+      z-index: 10;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      font-size: 20px;
+    }
+    .box1 {
+      background-color: gray;
+    }
+    .box2 {
+      background-color: orange;
+      position: relative;
+      left: 50px;
+      top: -150px;
+    }
+    .box3 {
+      background-color: pink;
+      position: absolute;
+      left: 130px;
+      top: 130px;
+      z-index: 3;
+    }
+    .box4 {
+      background-color: green;
+      position: fixed;
+      left: 200px;
+      top: 200px;
+    }
+    .box5 {
+      background-color: yellow;
+      position: fixed;
+      left: 300px;
+      top: 300px;
+      /* 层级比outer低，所以会被outer覆盖 */
+      z-index: 9;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+  </div>
+  <div class="box box5">5</div>
+</body>
+</html>
